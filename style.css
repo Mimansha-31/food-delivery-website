@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    margin: 5px 15px;
+    height:1 rem;
+    weight:1 rem;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#logo img{
+    height: 66px;
+    margin:5px 15px;
+
+
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1 rem;
+    
+}
+
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    padding: 15px 55px;
+    border-radius:1rem;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: ghostwhite;
+    
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+#home::before{
+    content: "";
+    background:url('pexels-creative-vix-375467.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.99;
+    
+}
+#home h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services  .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px 5px;
+    border-radius: 20%;
+    background-color: aliceblue;
+}
+#services  .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+.first{
+    font-size: 2rem;
+    padding: 12px;
+}
+
+
+.h-secondary{
+    font-size:2.8rem ;
+    padding: 12px;
+}
+.btn{
+    padding: 21px;
+    border-color: azure;
+    background-color: rgba(255, 228, 196, 0.397);
+    border-radius: 1.8rem;
+    margin: 20px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
